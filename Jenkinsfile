@@ -23,7 +23,7 @@ pipeline {
             steps {
                 sh '''
                    docker-compose up -d
-                   powershell ./scripts/test_container.ps1
+                    ./scripts/test_container.sh
                 '''
             }
             post {
